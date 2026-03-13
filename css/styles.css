@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ---------Header----------- */
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #d6667f !important;
+}
+
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+
+.nav-link:hover {
+    color: #d6667f;
+}
+
+.btn-login {
+
+    color: white;
+    border-radius: 8px;
+    border-color: #d6667f;
+
+}
+
+.btn-login:hover {
+    background: #fff;
+    color: #2c2c2c;
+}
+
+.btn-signup {
+    background: #d6667f;
+    border-radius: 8px;
+    color: white;
+
+}
+
+.btn-signup:hover {
+    background: #2A9D8F;
+    color: white;
+}
+
+
+/* ------customized buttons and text ---- */
+.btn-pink {
+    background: #d6667f;
+    color: white;
+}
+
+.btn-pink:hover {
+    background: #2A9D8F;
+}
+
+.btn-blue {
+    background-color: #2A9D8F;
+    transition: 0.3s ease;
+    color: white;
+
+}
+
+.btn-blue:hover {
+    background: #f4dfdf;
+    color: #120e0e;
+}
+
+.text-blue {
+    color: #2A9D8F;
+}
+
+/* ---------- Home Section ---------- */
+
+#home {
+    padding: 120px 0;
+    min-height: 90vh;
+    background: linear-gradient(135deg, rgba(97, 87, 87, 0.9), rgba(170, 235, 227, 0.9));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 span {
+    color: #d6667f;
+}
+
+/* -----Search destinations---- */
+.search-box {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+}
+
+.search-btn {
+    background: #2A9D8F;
+    cursor: pointer;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #120e0e;
+    color: #f4dfdf;
+}
+
+.search-box input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
+}
+
+.search-box button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* -----Home img----- */
+.home-img img {
+    max-width: 600px;
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.4));
+}
+
+/* ----Explore feature button---- */
+.btn-feature {
+    background-color: #d6667f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+.btn-feature:hover {
+    background: #2A9D8F;
+    color: #2c2c2c;
+
+}
+
+/* ---Statistics ----- */
+.hero-statistics {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.statistics h4 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.statistics p {
+    font-size: 1em;
+    color: #f8f1f1;
+}
+
+
+
+/* ---------- About Section ---------- */
+
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.about h2 {
+    color: #2c2c2c;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.bg-color {
+    background: #d6667f;
+}
+
+.about h2 span {
+    color: #d6667f;
+    font-weight: 800;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.feature-heading {
+    color: #2A9D8F;
+
+}
+
+.feature {
+    background: #d6667f;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    max-width: 220px;
+    
+}
+
+.feature p {
+    color: #f5f5dc;
+    font-size: 1em;
+}
+
+
+/* ---------Destinations----------- */
+
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.destination-card {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.explore-btn {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.explore-btn:hover {
+    background: #d6667f;
+}
+
+.btn-claim:hover {
+    background: #2A9D8F;
+    color: #120e0e;
+    border: 1px solid #120e0e;
+
+}
+
+/* ------Subscription section------ */
+.subscription {
+    background-color: #2A9D8F;
+}
+
+.btn-sub {
+    background: #d6667f;
+    color: #fff;
+}
+
+.btn-sub:hover {
+    background-color: #f8f1f1;
+    color: #120e0e;
+}
+
+.subscription input {
+    height: 50px;
+}
+
+
+
+/* -----Contact section-------- */
+
+.contact {
+    padding: 80px 0;
+}
+
+/* -------Footer Section------------- */
+
+.footer-logo {
+    color: #d6667f;
+}
+
+.footer-text {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    color: #d6667f !important;
+}
+
+.social-icon {
+    color: white;
+    font-size: 22px;
+    transition: 0.3s;
+
+}
+
+.social-icon:hover {
+    color: #d6667f;
+    transform: translateY(-3px);
+}
+
+
+/* ----------Media query-------- */
+
+
+/* Tablet (769px - 1024px) */
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destination-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 350px;
+    }
+
+    .search-box {
+        width: 300px;
+    }
+
+}
+
+/* ----Mobile (≤768px)------ */
+
+@media (max-width:768px) {
+
+    #home {
+        text-align: center;
+    }
+
+    #home img {
+        margin-top: 30px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 5px;
+    }
+
+    .hero-statistics {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .btn-login,
+    .btn-signup {
+        width: 100%;
+    }
+
+}
+
+/*------ DESKTOP ------- */
+
+@media (min-width:1025px) {
+
+    .feature {
+        width: 280px;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .hero-statistics {
+        flex-direction: row;
+    }
+
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TripEase helps you explore destinations, plan trips, and book travel experiences easily.">
+    <title>TripEase – Explore Destinations & Plan Your Dream Trips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!------------- Header Section---------- -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-decoration-none">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#d6667f" viewBox="0 0 24 24">
+                        <path
+                            d="M18.5 3c-.19 0-4.06.07-6.5 5.15C9.56 3.07 5.69 3 5.5 3 3.57 3 2 4.57 2 6.5v4c0 2.41 1.36 4.6 3.42 5.72A4 4 0 0 0 9 22c1.26 0 2.3-.91 3-2.21.7 1.31 1.74 2.21 3 2.21 2.21 0 4-1.79 4-4 0-.62-.15-1.23-.42-1.78A6.53 6.53 0 0 0 22 10.5v-4C22 4.57 20.43 3 18.5 3">
+                        </path>
+                    </svg>
+
+                    <span class="ms-2">TripEase</span>
+
+                </a>
+
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 fs-6">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destinations">Destinations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-login w-100" href="#">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn btn-signup w-100" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="py-5">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-lg-6">
+
+                        <h1 class="fw-bold text-white display-4">
+                            Explore the World with <span>TripEase</span>
+                            <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#d6667f"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M18.5 3c-.19 0-4.06.07-6.5 5.15C9.56 3.07 5.69 3 5.5 3 3.57 3 2 4.57 2 6.5v4c0 2.41 1.36 4.6 3.42 5.72A4 4 0 0 0 9 22c1.26 0 2.3-.91 3-2.21.7 1.31 1.74 2.21 3 2.21 2.21 0 4-1.79 4-4 0-.62-.15-1.23-.42-1.78A6.53 6.53 0 0 0 22 10.5v-4C22 4.57 20.43 3 18.5 3">
+                                </path>
+                            </svg>
+                        </h1>
+
+                        <p class="mt-3 fs-5 text-white">
+                            Plan your dream trip with ease. Discover beautiful destinations,
+                            get travel tips, and create unforgettable memories with TripEase.
+                        </p>
+
+                        <!-- Search destinations -->
+                        <div class="search-box mt-4">
+
+                            <input type="text" placeholder="Search destinations" aria-label="Search destinations">
+
+                            <button class="search-btn">Search</button>
+
+                        </div>
+
+                        <!-- Explore Features button -->
+                        <a href="#about" class="btn btn-feature mt-3">
+                            Explore Features
+                        </a>
+
+                    </div>
+
+                    <!-- hero Image -->
+                    <div class="col-lg-6 text-center home-img">
+
+                        <img src="images/hero.png" alt="Travel Banner" class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <!-- ----Statistics -->
+                <div class="hero-statistics mt-4">
+
+                    <div class="statistics">
+                        <h4>500+</h4>
+                        <p>Destinations</p>
+                    </div>
+
+                    <div class="statistics">
+                        <h4>10K+</h4>
+                        <p>Happy Travelers</p>
+                    </div>
+
+                    <div class="statistics">
+                        <h4>24/7</h4>
+                        <p>Support</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ----About & Features---- -->
+
+        <section id="about" class="about py-5">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <h2 class="text-center mb-5">
+                    Why Choose <span>TripEase?</span>
+                </h2>
+
+                <!-- About / Mission -->
+                <div class="row align-items-center mb-5">
+
+                    <!-- Text -->
+                    <div class="col-lg-6 col-md-12">
+                        <h3 class="about-title mb-3 text-blue display-6 fw-semibold">Our Mission</h3>
+
+                        <p class="about-text fs-5">
+                            At TripEase, our mission is to make travel planning simple,
+                            affordable, and enjoyable. We help travelers discover amazing
+                            destinations, organize their trips easily, and create
+                            unforgettable experiences around the world.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <img src="images/about-pic.png" class="img-fluid rounded shadow" alt="TripEase travel planning">
+                    </div>
+
+                </div>
+
+
+                <!-- Features Title -->
+                <h3 class="feature-heading text-center mb-4 fw-semibold display-6">
+                    Features
+                </h3>
+
+
+                <!-- Features Container -->
+                <div class="feature-container">
+
+                    <!-- Feature 1 -->
+                    <div class="feature">
+                        <img src="images/booking.png" alt="Easy Booking">
+                        <h4 class="fw-semibold fs-4 text-white">Easy Booking</h4>
+                        <p>
+                            Book flights, hotels, and travel packages quickly
+                            from a single platform.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature">
+                        <img src="images/planning.png" alt="Smart Planning">
+                        <h4 class="fw-semibold fs-4 text-white">Smart Planning</h4>
+                        <p>
+                            Organize your itinerary easily with our smart
+                            travel planning tools.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature">
+                        <img src="images/support.png" alt="24/7 Support">
+                        <h4 class="fw-semibold fs-4 text-white">24/7 Support</h4>
+                        <p>
+                            Get travel assistance anytime with our
+                            dedicated support team.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- -----------Destination section----------- -->
+        <section id="destinations" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-semibold display-5 mb-5 text-blue">Popular Destinations</h2>
+                <p class="text-center text-muted fs-5 mb-5">
+                    Discover some of the world’s most loved travel destinations. From tropical beaches to romantic
+                    cities and breathtaking mountain landscapes, these locations offer unforgettable experiences for
+                    every traveler.
+                </p>
+
+                <div class="destination-grid">
+
+                    <!-- Maldives -->
+                    <div class="destination-card">
+                        <div class="card h-100">
+                            <img src="images/destination1.jpg" class="card-img-top" alt="Maldives">
+
+                            <div class="card-body">
+                                <h5 class="fs-4 fw-bold text-blue">Maldives</h5>
+
+                                <p class="text-muted">
+                                    Crystal-clear waters, white sandy beaches, and luxury island resorts —
+                                    perfect for honeymoon and relaxation.
+                                </p>
+
+                                <p class="mb-1">⭐ Rating: <strong>4.8 / 5</strong></p>
+                                <p class="mb-1">🗓 Trip Duration: <strong>5 Days</strong></p>
+                                <p class="mb-3">💰 Price: <strong>$1200</strong></p>
+
+                                <a href="#" class="btn btn-pink w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Paris -->
+                    <div class="destination-card">
+                        <div class="card h-100">
+                            <img src="images/destination2.jpg" class="card-img-top" alt="Paris">
+
+                            <div class="card-body">
+                                <h5 class="fs-4 fw-bold text-blue">Paris</h5>
+
+                                <p class="text-muted">
+                                    The romantic city of lights known for the Eiffel Tower,
+                                    charming cafés, art museums, and rich culture.
+                                </p>
+
+                                <p class="mb-1">⭐ Rating: <strong>4.7 / 5</strong></p>
+                                <p class="mb-1">🗓 Trip Duration: <strong>4 Days</strong></p>
+                                <p class="mb-3">💰 Price: <strong>$950</strong></p>
+
+                                <a href="#" class="btn btn-pink w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Switzerland -->
+                    <div class="destination-card">
+                        <div class="card h-100">
+                            <img src="images/destination3.jpg" class="card-img-top" alt="Switzerland">
+
+                            <div class="card-body">
+                                <h5 class="fs-4 fw-bold text-blue">Switzerland</h5>
+
+                                <p class="text-muted">
+                                    A paradise of snowy mountains, scenic train rides,
+                                    crystal lakes, and breathtaking Alpine landscapes.
+                                </p>
+
+                                <p class="mb-1">⭐ Rating: <strong>4.9 / 5</strong></p>
+                                <p class="mb-1">🗓 Trip Duration: <strong>6 Days</strong></p>
+                                <p class="mb-3">💰 Price: <strong>$1500</strong></p>
+
+                                <a href="#" class="btn btn-pink w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-blue explore-btn">
+                        Explore More Destinations
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-------Exclusive Deals Section------- -->
+        <section class="deals py-5 bg-color">
+            <div class="container">
+
+                <h2 class="text-center display-5 fw-bold mb-5">Exclusive Travel Deals</h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card shadow h-100">
+                            <div class="card-body text-center">
+
+                                <h5 class="fw-semibold">Maldives Special</h5>
+                                <p>Enjoy a romantic island getaway with luxury resorts.</p>
+
+                                <p class="text-success fw-bold">Save 20%</p>
+
+                                <a href="#" class="btn btn-blue">Grab Deal</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow h-100">
+                            <div class="card-body text-center">
+
+                                <h5 class="fw-semibold">Paris Summer Offer</h5>
+                                <p>Explore the city of love with special summer discounts.</p>
+
+                                <p class="text-success fw-bold">Flat $200 Off</p>
+
+                                <a href="#" class="btn btn-blue">Grab Deal</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow h-100">
+                            <div class="card-body text-center">
+
+                                <h5 class="fw-semibold">Swiss Winter Escape</h5>
+                                <p>Experience snowy mountains and scenic train journeys.</p>
+
+                                <p class="text-success fw-bold">15% Discount</p>
+
+                                <a href="#" class="btn btn-blue">Grab Deal</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ------Offer Section------ -->
+        <section class="offer-section py-5 bg-dark text-white">
+            <div class="container text-center">
+
+                <h2 class="fw-bold">🔥 Limited Time Travel Offer</h2>
+
+                <p class="fs-5">
+                    Get <span class="text-warning fw-bold">25% OFF</span> on your first international trip
+                </p>
+
+                <a href="#" class="btn-claim btn btn-warning mt-3">Claim Offer</a>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body">
+
+                                <h2 class="mb-4 fw-bold display-5 text-center text-blue">Reach Us</h2>
+
+                                <form action="#" method="post">
+
+                                    <!-- Name -->
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                            required>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="Enter your email" required>
+                                    </div>
+
+                                    <!-- Subject -->
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" id="subject" class="form-control" placeholder="Enter subject"
+                                            required>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4"
+                                            placeholder="Enter your message" required></textarea>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-pink text-white w-100">
+                                            Send Message
+                                        </button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- -----Subscription section------ -->
+
+        <section class="subscription py-5 text-center">
+            <div class="container">
+
+                <h2 class="fw-bold mb-3 display-6 text-white">Subscribe and get exclusive deals & offer</h2>
+
+                <p class="text-white fs-5 mb-4">
+                    Get the latest travel deals, destination tips, and exclusive offers directly in your inbox.
+                </p>
+
+                <form class="row justify-content-center">
+
+                    <div class="col-md-4 mb-2">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="col-md-2 mb-2">
+                        <button class="btn btn-sub w-100">
+                            Subscribe
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-light pt-5 pb-3">
+        <div class="container">
+
+            <div class="row text-center text-md-start">
+
+                <!-- Logo / About -->
+                <div class="col-md-4 mb-4">
+
+                    <h5 class="fw-bold footer-logo">TripEase</h5>
+
+                    <p class="footer-text">
+                        TripEase helps you discover amazing destinations,
+                        plan your trips easily, and create unforgettable
+                        travel memories around the world.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Quick Links</h6>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">Features</a></li>
+                        <li><a href="#destinations" class="text-light text-decoration-none">Destinations</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Follow Us</h6>
+
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <!-- Copyright -->
+            <p class="text-center mb-0">
+                © 2026 TripEase Travel App | All Rights Reserved
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
